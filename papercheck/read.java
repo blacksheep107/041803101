@@ -1,7 +1,7 @@
-import java.io.*;
 import java.util.*;
-public class PaperCheck {
-    public static String readToString(String fileName) {//读入整个文件
+import java.io.*;
+public class read {
+    public static String readToString(String fileName) {
         String encoding = "UTF-8";
         File file = new File(fileName);
         Long filelength = file.length();
@@ -68,24 +68,9 @@ public class PaperCheck {
         if(down==0||up==0)  return 0;
         return up/down;
     }
-
     public static void main(String[] args){
         String orig=readToString("orig.txt");
-        String paper=readToString("orig_0.8_rep.txt");
-        double sum=getCos(orig,paper);
-        String ans=String.format("%.2f",sum);
-        File f=new File("ans.txt");
-        try{
-            if(!f.exists()){
-                f.createNewFile();
-            }
-            FileWriter fw=new FileWriter(f);
-            fw.write("");
-            fw.flush();
-            fw.write(String.valueOf(ans));
-            fw.close();
-        }catch(IOException e){
-            e.printStackTrace();
-        }
+        String paper=readToString("orig_0.8_mix.txt");
+        System.out.println(String.format("%.2f",getCos(orig,paper)));
     }
 }

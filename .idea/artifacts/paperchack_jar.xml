@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="paperchack:jar">
+    <output-path>$PROJECT_DIR$/release</output-path>
+    <root id="archive" name="paperchack.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="extracted-dir" path="$MAVEN_REPOSITORY$/com/hankcs/hanlp/portable-1.7.2/hanlp-portable-1.7.2.jar" path-in-jar="/" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/getCos.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/main.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/readToString.java" />
+      <element id="file-copy" path="$PROJECT_DIR$/src/main/java/writeIntoAnswer.java" />
+    </root>
+  </artifact>
+</component>

@@ -10,11 +10,9 @@
 
 - cmd窗口找到release文件夹，输入指令：
 
-java -jar main.jar [文件名1] [文件名2]
+java -jar main.jar [原文文件] [抄袭版论文的文件] [答案文件]
 
-java -jar main.jar orig.txt orig_0.8_add.txt
-
-结果自动写入ans.txt
+java -jar main.jar C:\tests\org.txt C:\tests\org_add.txt C:\tests\ans.txt
 
 # 使用说明
 

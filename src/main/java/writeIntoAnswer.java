@@ -1,9 +1,9 @@
 import java.io.*;
 //写入ans文件
 public class writeIntoAnswer {
-    public static void writeIntoAnswer(double sum){//
+    public static void writeIntoAnswer(double sum,String anstext){//
         String ans=String.format("%.2f",sum);
-        File f=new File("ans.txt");
+        File f=new File(anstext);
         try{
             if(!f.exists()){
                 f.createNewFile();

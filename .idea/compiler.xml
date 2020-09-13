@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="paperchack" />
         <module name="papercheck" />
+        <module name="041803101" />
       </profile>
     </annotationProcessing>
   </component>
